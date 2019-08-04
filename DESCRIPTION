@@ -1,0 +1,16 @@
+Package: hamwrapper
+Type: Package
+Title: Compiles Stan models and exposes gradients/hessians of a hamiltonian suitable for HMC
+Version: 1.0
+Date: 2019-08-02
+Authors@R: as.person(c(
+    "Arya Pourzanjani <pourzanj@gmail.com> [ctb]", 
+    "Ben Bales <bbbales2@gmail.com> [ctb, cre]"
+  ))
+Description: This package compiles Stan models to a form so that other packages can query them for gradients,
+  hessians, etc. This is meant to make it easy to experiment with different types of Bayesian inference algorithms
+  from R by leaving the model specification to Stan.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.2), rstan (>= 2.19.2)
+Suggests: 
+    testthat (>= 2.1.0)
